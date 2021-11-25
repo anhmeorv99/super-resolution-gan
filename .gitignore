@@ -1,4 +1,2 @@
-.ipynb_checkpoints
-.div2k
-.ckpt
-
+__pycache__
+*/__pycache__
