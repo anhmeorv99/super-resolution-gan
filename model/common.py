@@ -41,12 +41,12 @@ def denormalize(x, rgb_mean=DIV2K_RGB_MEAN):
 
 
 def normalize_01(x):
-    """Normalizes RGB images to [0, 1]."""
+    """Normalizes RGB input to [0, 1]."""
     return x / 255.0
 
 
 def normalize_m11(x):
-    """Normalizes RGB images to [-1, 1]."""
+    """Normalizes RGB input to [-1, 1]."""
     return x / 127.5 - 1
 
 

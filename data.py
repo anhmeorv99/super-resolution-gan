@@ -9,7 +9,7 @@ class DIV2K:
                  scale=2,
                  subset='train',
                  downgrade='bicubic',
-                 images_dir='.div2k/images',
+                 images_dir='.div2k/input',
                  caches_dir='.div2k/caches'):
 
         self._ntire_2018 = True
@@ -141,9 +141,9 @@ class DIV2K:
 
     @staticmethod
     def _populate_cache(ds, cache_file):
-        print(f'Caching decoded images in {cache_file} ...')
+        print(f'Caching decoded input in {cache_file} ...')
         for _ in ds: pass
-        print(f'Cached decoded images in {cache_file}.')
+        print(f'Cached decoded input in {cache_file}.')
 
 
 # -----------------------------------------------------------
